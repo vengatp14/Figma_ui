@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Template</title>
+
+    <!-- boostrap css  -->
+    <link
+      rel="stylesheet"
+      href="./Assets/vendors/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+
+    <!-- coustom css  -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+
+    <!-- boostrap icons  -->
+    <link
+      rel="stylesheet"
+      href="./Assets/vendors/icons-1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav Bar start  -->
+    <nav class="navbar navbar-expand-lg nav_height">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./Assets/images/logo_icon.svg"
+            height="24px"
+            width="24px"
+            alt=""
+          /><span class="logo_text"> Booker</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu" aria-current="page" href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu_active" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu" href="#">Business</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="Nav_btn Btn_1 me-2" type="submit">Login</button>
+            <button class="Nav_btn Btn_2 me-2" type="submit">Register</button>
+
+            <div class="dropdown DD_style dropstart">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./Assets/images/flag.png" alt="" />
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar End  -->
+
+    <!-- nav 2 start  -->
+    <nav class="container-fluid bg_color_nav_2 py-4">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control search_input"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                />
+                <span class="input-group-text bg_search" id="basic-addon1"
+                  ><i class="bi bi-search px-2"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <select
+            class="form-select w-75_css select_style"
+            aria-label="Default select example"
+          >
+            <option selected>Choose filters</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <!-- nav 2 end  -->
+
+    <!-- confirmation page content start -->
+    <section class="container mb-5 pb-5">
+      <div class="row">
+        <div class="col-lg-12 mt-5 pt-5">
+          <h1 class="Page_Heading text-start">My orders</h1>
+
+          <h2 class="Sub_heading">
+            <img src="./Assets/images/check.svg" class="img-fluid" alt="" />
+            Your order is confirmed
+          </h2>
+
+          <p class="para_text">
+            An email has been sent to the support@domain.com address.
+          </p>
+        </div>
+
+        <div class="col-lg-12 border border_Style">
+          <div class="padding_css">
+            <h3 class="Sub_3_Heading">Order items</h3>
+            <div class="row">
+              <div class="col-lg-3">
+                <img
+                  src="./Assets/images/Screenshot_23.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-3">
+                <h4 class="Order_heading">Product name</h4>
+                <span class="d-block">Lorem Ipsum</span>
+              </div>
+              <div class="col-lg-2">
+                <h4 class="Order_heading">Quantity</h4>
+                <span class="d-block">1</span>
+              </div>
+              <div class="col-lg-4">
+                <h4 class="Order_heading">Dates</h4>
+                <span class="d-block text-primary"
+                  >You can choose your dates from your profile</span
+                >
+              </div>
+              <div class="col-lg-12 d-flex justify-content-between">
+                <span class="d-block text_style">Subtotal</span>
+                <span class="d-block text_style">$68.93</span>
+              </div>
+
+              <div
+                class="col-lg-12 d-flex justify-content-between Bg_total align-items-center"
+              >
+                <span class="d-block Total_text text-decoration-underline"
+                  >TOTAL (TAX INCL.)</span
+                >
+                <span class="d-block Total_text text-decoration-underline"
+                  >$68.93</span
+                >
+              </div>
+
+              <div class="col-lg-12 mt-3">
+                <h4 class="heading_order">Order details</h4>
+                <p class="mt-2 para_order m-0">Order reference: MYAPJFASP</p>
+                <p class="para_order m-0">Payment method: Payments by check</p>
+                <p class="para_order m-0">
+                  Date change: You have 72 hours to change or cancel your dates
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 mt-4 border border_Style">
+          <div class="padding_css">
+            <h4 class="List_heading">Your order in Shop is complete.</h4>
+            <h4 class="List_heading">Your check must include:</h4>
+            <p class="m-0 List_heading">- Payment amount: $68.93</p>
+            <p class="m-0 List_heading">- Payable to the order of _____</p>
+            <p class="m-0 List_heading">- Mail to _____</p>
+            <p class="m-0 List_heading">
+              - Do not forget to insert your order reference: MYAPJFASP
+            </p>
+
+            <p class="m-0 List_heading my-2">
+              An email has been sent to you with this information.
+            </p>
+            <h5 class="last_haeding">
+              Your order will be sent as soon as we receive your payment.
+            </h5>
+            <p class="m-0 List_heading">
+              For any questions or for further information, please contact our
+              <span class="para_heading">customer and department.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- confirmation page content end -->
+
+    <!-- Footer start -->
+    <footer >
+    <section class="container-fluid">
+      <div class=" row">
+        <div class="col-lg-12">
+        
+         <div class="row text-center">
+          <div class="col-lg-2"></div>
+          <div class="col-lg Footer_text"> About</div>
+          <div class="col-lg Footer_text"> Categories</div>
+          <div class="col-lg Footer_text"> Business</div>
+          <div class="col-lg Footer_text"> FAQ</div>
+          <div class="col-lg-2"></div>
+         </div>
+        
+        </div>
+        <div class="col-lg-12 mb-4">
+          <span class="d-block d-flex ">
+            <img src="./Assets/images/Snap.svg" class="img-fluid me-2" alt="">
+            <img src="./Assets/images/Instagram.svg" class="img-fluid me-2" alt="">
+            <img src="./Assets/images/Tiktok.svg" class="img-fluid me-2" alt="">
+            <img src="./Assets/images/Facebook.svg" class="img-fluid me-2" alt="">
+          </span>
+        </div>
+        <div class="col-lg-12">
+          <p class="footer_text_rights text-center">Copyright ©2021. All Right Reserved  </p>
+        </div>
+              </div>
+    </section>
+    </footer>
+    <!-- Footer End -->
+    <!-- boostrap js  -->
+    <script src="./Assets/vendors/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
