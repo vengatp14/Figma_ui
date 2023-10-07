@@ -306,3 +306,10 @@ letter-spacing: 0.04688rem;
         margin-top: 20px;
     }
 }
+.nav_bg{
+    background-color: white;
+    z-index: 99;
+}
+.ZIndex{
+    z-index: 1;
+}
