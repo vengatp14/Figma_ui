@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Template</title>
+
+    <!-- boostrap css  -->
+    <link
+      rel="stylesheet"
+      href="./Assets/vendors/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+
+    <!-- coustom css  -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/Boostrap_overwright.css" />
+    <!-- boostrap icons  -->
+    <link
+      rel="stylesheet"
+      href="./Assets/vendors/icons-1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav Bar start  -->
+    <nav class="navbar navbar-expand-lg nav_height">
+      <div class="container-fluid nav_bg">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./Assets/images/search.png"
+            height="24px"
+            width="24px"
+            alt=""
+          /><span class="logo_text"> Booker</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu" aria-current="page" href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu_active" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Nav_Menu" href="#">Business</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="Nav_btn Btn_1 me-2" type="submit">Login</button>
+            <button class="Nav_btn Btn_2 me-2" type="submit">Register</button>
+
+            <div class="dropdown DD_style dropstart">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./Assets/images/flag.png" alt="" />
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar End  -->
+
+    <!-- nav 2 start  -->
+    <nav class="container-fluid bg_color_nav_2 py-4">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control search_input ZIndex"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                />
+                <span class="input-group-text bg_search" id="basic-addon1"
+                  ><i class="bi bi-search px-2"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <select
+            class="form-select w-75_css select_style"
+            aria-label="Default select example"
+          >
+            <option selected>Choose filters</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <!-- nav 2 end  -->
+
+    <!-- My oder page content start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="Order_Head py-5">My oders</h2>
+        </div>
+        <div class="col-lg-12">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                general
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                My orders
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                My appointements
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-disabled-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-disabled"
+                type="button"
+                role="tab"
+                aria-controls="pills-disabled"
+                aria-selected="false"
+              >
+                Saved
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-disabled-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-1"
+                type="button"
+                role="tab"
+                aria-controls="pills-disabled"
+                aria-selected="false"
+              >
+                mes formations
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-disabled-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-2"
+                type="button"
+                role="tab"
+                aria-controls="pills-disabled"
+                aria-selected="false"
+              >
+                recommandations
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link Text_tab_style"
+                id="pills-disabled-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-3"
+                type="button"
+                role="tab"
+                aria-controls="pills-disabled"
+                aria-selected="false"
+              >
+                contacts
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <!-- tab1  -->
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12 mt-4">
+                    <div class="">
+                      <h3 class="Sub_3_Heading">Order items</h3>
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <img
+                            src="./Assets/images/Screenshot_23.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Product name</h4>
+                          <span class="d-block pt-2">Lorem Ipsum</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Unit price</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Quantity</h4>
+                          <div class="d-flex pt-2">
+                            <span class="d-block"
+                              ><i class="bi bi-plus icon_style"></i
+                            ></span>
+                            <span class="d-block mx-2">1</span>
+                            <span class="d-block"
+                              ><i class="bi bi-dash icon_style"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Total products</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Status</h4>
+                          <span class="d-block pt-2">1/2 effectués</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 mb-4 d-flex justify-content-end">
+                    <button class="theme_btn me-3">Choose dates</button>
+                    <button class="theme_btn">See more</button>
+                  </div>
+
+                  <div class="col-lg-12 mt-5">
+                    <div class="">
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <img
+                            src="./Assets/images/Screenshot_23.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Product name</h4>
+                          <span class="d-block pt-2">Lorem Ipsum</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Unit price</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Quantity</h4>
+                          <div class="d-flex pt-2">
+                            <span class="d-block"
+                              ><i class="bi bi-plus icon_style"></i
+                            ></span>
+                            <span class="d-block mx-2">1</span>
+                            <span class="d-block"
+                              ><i class="bi bi-dash icon_style"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Total products</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Status</h4>
+                          <span class="d-block pt-2">1/2 effectués</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 mb-4 d-flex justify-content-end">
+                    <button class="theme_btn me-3">Choose dates</button>
+                    <button class="theme_btn">See more</button>
+                  </div>
+
+                  <div class="col-lg-12 mt-5">
+                    <div class="">
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <img
+                            src="./Assets/images/Screenshot_23.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Product name</h4>
+                          <span class="d-block pt-2">Lorem Ipsum</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Unit price</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Quantity</h4>
+                          <div class="d-flex pt-2">
+                            <span class="d-block"
+                              ><i class="bi bi-plus icon_style"></i
+                            ></span>
+                            <span class="d-block mx-2">1</span>
+                            <span class="d-block"
+                              ><i class="bi bi-dash icon_style"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Total products</h4>
+                          <span class="d-block pt-2">$68.93</span>
+                        </div>
+
+                        <div class="col-lg-2">
+                          <h4 class="Order_heading">Status</h4>
+                          <span class="d-block pt-2">1/2 effectués</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 mb-4 d-flex justify-content-end">
+                    <button class="theme_btn me-3">Choose dates</button>
+                    <button class="theme_btn">See more</button>
+                  </div>
+                </div>
+              </div>
+              <!-- tab 1  -->
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              2
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              3
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-disabled"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              4
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-1"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              5
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-2"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              6
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-3"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My oder page content end -->
+
+    <!-- Footer start -->
+    <footer>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row text-center">
+              <div class="col-lg-3"></div>
+              <div class="col-lg Footer_text">About</div>
+              <div class="col-lg Footer_text">Categories</div>
+              <div class="col-lg Footer_text">Business</div>
+              <div class="col-lg Footer_text">FAQ</div>
+              <div class="col-lg-3"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 mb-4">
+            <span class="d-block d-flex">
+              <img
+                src="./Assets/images/Snap.svg"
+                class="img-fluid me-2"
+                alt=""
+              />
+              <img
+                src="./Assets/images/Instagram.svg"
+                class="img-fluid me-2"
+                alt=""
+              />
+              <img
+                src="./Assets/images/Tiktok.svg"
+                class="img-fluid me-2"
+                alt=""
+              />
+              <img
+                src="./Assets/images/Facebook.svg"
+                class="img-fluid me-2"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="col-lg-12">
+            <p class="footer_text_rights text-center">
+              Copyright ©2021. All Right Reserved
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- boostrap js  -->
+    <script src="./Assets/vendors/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

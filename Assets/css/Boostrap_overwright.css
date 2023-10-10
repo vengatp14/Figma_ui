@@ -1,0 +1,27 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #4945FF;
+    background-color: #ffffff;
+    border-bottom: 2px solid #4945FF;
+    border-radius: 0px;
+    text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1rem; /* 145.455% */
+text-transform: uppercase;
+}
+
+.Text_tab_style{
+
+    color: var(--Neutral500, #8E8EA9);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1rem; /* 145.455% */
+text-transform: uppercase;
+}
