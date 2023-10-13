@@ -26,6 +26,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+      <!-- fullcalendar -->
+      <link rel="stylesheet" href="https://fullcalendar.io/releases/core/4.0.2/main.min.css">
+      <link rel="stylesheet" href="https://fullcalendar.io/releases/daygrid/4.0.1/main.min.css">
+      <link rel="stylesheet" href="https://fullcalendar.io/releases/list/4.0.1/main.min.css">
+  
   </head>
 
   <body>
@@ -34,7 +40,7 @@
       <div class="container-fluid nav_bg">
         <a class="navbar-brand" href="#"
           ><img
-            src="./Assets/images/search.png"
+            src="./Assets/images/logo_icon.svg"
             height="24px"
             width="24px"
             alt=""
@@ -54,8 +60,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link Nav_Menu" aria-current="page" href="#"
-                >About</a
+              <button class="nav-link Nav_Menu" 
+              data-bs-target="#exampleModal1" 
+                >About</button
               >
             </li>
             <li class="nav-item">
@@ -171,7 +178,7 @@
                 <span class="product_sub d-block">
                   Sensi Part 3 - 17.06.2022</span
                 >
-                <span class="d-block edit_text mt-3 text-center"><img src="./Assets/images/edit.svg" alt="">Edit</span>
+                <button class="d-block edit_text mt-3 text-center" aria-current="page"  data-bs-toggle="modal"     data-bs-target="#exampleModal1"><img src="./Assets/images/edit.svg" alt="">Edit</button>
               </div>
               <div class="col-lg-3">
                 <h4 class="Order_heading">Status - Pack part 2</h4>
@@ -321,7 +328,45 @@
       </div>
     </div>
 
+
+
+      <!-- Modal -->
+      <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id='calendar'></div>
+          </div>
+          <div class="modal-footer border-0">
+            <button class="theme_btn mt-4">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- boostrap js  -->
     <script src="./Assets/vendors/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js  -->
+<script src="./Assets/js/main.js"></script>
+     <!-- fullcalendar -->
+     <script src="https://fullcalendar.io/releases/core/4.0.2/main.min.js"></script>
+     <script src="https://fullcalendar.io/releases/daygrid/4.0.1/main.min.js"></script>
+     <script src="https://fullcalendar.io/releases/list/4.0.1/main.min.js"></script>
+     <script src="https://fullcalendar.io/releases/google-calendar/4.0.1/main.min.js"></script>
   </body>
 </html>

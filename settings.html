@@ -26,6 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+  
   </head>
 
   <body>
@@ -34,7 +36,7 @@
       <div class="container-fluid nav_bg">
         <a class="navbar-brand" href="#"
           ><img
-            src="./Assets/images/search.png"
+            src="./Assets/images/logo_icon.svg"
             height="24px"
             width="24px"
             alt=""
@@ -243,7 +245,7 @@
             <div class="card mt-4 card_shadow p-3" >
                 <img src="./Assets/images/unsplash_8ZKwW-2SR28.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title Card_head_text text-center my-3">Card title</h5>
+                  <h5 class="ca rd-title Card_head_text text-center my-3">Card title</h5>
                  <div class="d-flex justify-content-evenly pt-2 pb-4">
 <span class="d-block text-muted card_offer_price"><s>$123.20</s></span>
 <span class="d-block card_para_text">$123.20</span>
@@ -368,7 +370,57 @@
     </footer>
     <!-- Footer End -->
 
+
+      <!-- Modal -->
+      <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span class="d-block Select_Lable">Type de vécicule</span>
+            <select
+              class="form-select Select_style form-select-lg mb-3"
+              aria-label="Large select example"
+            >
+              <option selected></option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <span class="d-block Select_Lable"> Monitor </span>
+            <select
+              class="form-select Select_style form-select-lg mb-3"
+              aria-label="Large select example"
+            >
+              <option selected></option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="modal-footer border-0">
+            <button class="theme_btn mt-4">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- boostrap js  -->
     <script src="./Assets/vendors/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    
   </body>
 </html>

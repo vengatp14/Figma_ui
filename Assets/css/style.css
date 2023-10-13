@@ -467,3 +467,8 @@ letter-spacing: 0.04688rem;
 /* Shadow / 2 */
 box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.10);
 }
+
+#calendar {
+    max-width: 900px;
+    margin: 40px auto;
+  }
